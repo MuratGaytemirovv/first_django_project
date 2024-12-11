@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def index(request):
     result = calculate(request)
-    return render(request, "index.html", {"result", result})
+    return render(request, "index.html", {"result": result})
 
 
 def calculate(request):
